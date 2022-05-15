@@ -71,6 +71,18 @@
   } 
 
   .control label {
+    cursor: pointer;
+  }
+     
+  .control .btn:hover {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+  } 
+  .control .btn:active {
+    border: 2px solid white;
+    background-color: red;
+  }
+  .btn {
     position: relative;
     display: inline-block;
     width: 1rem;
@@ -82,20 +94,8 @@
     transition: all 0.5s ease-out;
     cursor: pointer;
     transition: all 0.5s ease-out;
-    margin-left: 1.5rem;
-  }
-     
-  .control label:hover {
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
-  } 
-  .control label:active {
-    border: 2px solid white;
-    background-color: red;
-  }
-  .btn {
-      width: 3rem;
-      height: 3rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
   }
 
   .slides,
@@ -158,16 +158,16 @@
   
     transform: translateX(-75%);
   }
-  #bt-1:checked ~ .control .control-1 {
+  #bt-1:checked ~ .control .control-1 .btn {
     background-color: rgb(34, 232, 34);
   }
-  #bt-2:checked ~ .control .control-2 {
+  #bt-2:checked ~ .control .control-2 .btn {
     background-color: rgb(34, 232, 34);
   }
-  #bt-3:checked ~ .control .control-3 {
+  #bt-3:checked ~ .control .control-3 .btn {
     background-color: rgb(34, 232, 34);
   }
-  #bt-4:checked ~ .control .control-4 {
+  #bt-4:checked ~ .control .control-4 .btn {
     background-color: rgb(34, 232, 34);
   }
   
@@ -181,9 +181,8 @@
     html {
       font-size: 0.6rem;
     }
-    .container {
-      height:50vh;
-    }
+    
+
     .slider {
       grid-template-columns: 1fr; 
       grid-template-rows: 6fr 1fr 1fr; 
@@ -199,17 +198,10 @@
       padding: 0;
       width: 0rem;
     }
-    .control label { 
-      margin-right: 2.4rem;
-      
-    }
-    
+       
     .slider_text-content .slide {
       text-align: center;
       padding: 0;
     }
     
   }
-   
-  
- 
