@@ -74,11 +74,11 @@
     cursor: pointer;
   }
      
-  .control .btn:hover {
+  .control label:hover > .btn {
     border: 1px solid #ffffff;
     background-color: #ffffff;
   } 
-  .control .btn:active {
+  .control label:active > .btn {
     border: 2px solid white;
     background-color: red;
   }
@@ -129,11 +129,24 @@
   .slide {
     object-fit: scale-down;
   } 
+
   .slider_text-content .slide {
     width: 50vW;
     height: 100%;
     display: inline-block;
   }
+
+  span {
+    animation: colorized 10s ease-out infinite;
+    
+  }
+
+@keyframes colorized {
+  0% {color: #fff;} 
+  30% {color: rgb(79, 29, 232);}
+  60% {color:#fff;}
+  100% {color: rgb(40, 223, 40);}
+}
 
    
   #bt-1:checked ~ .slider_content .slides,
@@ -181,7 +194,9 @@
     html {
       font-size: 0.6rem;
     }
-    
+    .container {
+      height: 43vh;
+    }
 
     .slider {
       grid-template-columns: 1fr; 
