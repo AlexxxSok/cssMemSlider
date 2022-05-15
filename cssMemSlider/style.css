@@ -11,7 +11,7 @@
     height: 100vh;
     font-size: 2rem;
     color:white;
-    background-color:black;
+    background-color:goldenrod;
     font-family: Arial, sans-serif;
    
   }
@@ -29,7 +29,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    background-color:black;
+    background-color:goldenrod;
     overflow: hidden;
     display: grid;
     grid-template-rows: 3fr 1fr;
@@ -79,28 +79,25 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-   
   }
   
   .slides .sl-1 {
-    background-image: url('./assets/1-dog.jpg');
+    background-image: url('./assets/1-engineering-school.jpg');
    }
   .slides .sl-2 {
     background-image: url('./assets/2-Sparta.jpg');
   }
   .slides .sl-3 {
-    background-image: url('./assets/3-doc.jpg');
+    background-image: url('./assets/3-loading.jpg');
   }
   .slides .sl-4 {
     background-image: url('./assets/4-software.jpg');
   }
 
   
-  .slider_text-content .slide {
-    display: inline-block;
-    width: 50vW;
-    height: 100%;
+  .slide {
+    object-fit: scale-down;
   }
-
   
+ 
   
