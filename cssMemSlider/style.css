@@ -21,7 +21,7 @@
   
   .container {
     width: 50vw;
-    height: 70vh;
+    height:30%;
     margin: 1rem auto;
   }
   
@@ -185,7 +185,7 @@
   
   @media screen and (max-width: 150rem) {
    .container {
-      height: 60%;;   
+      height: 75%;   
     }
   }
   @media screen and (max-width: 110rem) {
@@ -193,12 +193,12 @@
       font-size: 0.8em;
     }
     .container {
-      height: 50%;;   
+      height: 64%;   
     }
   }
   @media screen and (max-width: 80rem) {
     .container {
-      height: 40%;   
+      height: 54%;   
     }
   }
     
@@ -207,7 +207,7 @@
       font-size: 0.6rem;
     }
     .container {
-      height: 37%;
+      height: 39%;
     }
 
     .slider {
@@ -233,6 +233,14 @@
   }
   @media screen and (max-width: 40rem) {
     .container {
-      height: 25%;  
+      height: 32%;  
+    }
+  }
+  @media screen and (max-width: 30rem) {
+    .container {
+      height: 22%;  
+    }
+    html {
+      font-size: 0.4rem;
     }
   }
